@@ -1,0 +1,9 @@
+﻿@model IEnumerable<RedditAPILab.Models.RedditLinks>
+
+@foreach (var post in Model)
+{
+    <a href="@post.Link">
+        <h2>@post.Title</h2>
+        <img src="@post.Image" />
+    </a>
+}
